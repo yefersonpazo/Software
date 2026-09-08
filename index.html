@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Presentación interactiva sobre el Proceso Unificado Ágil (AUP).">
+	<title>AUP | Proceso Unificado Ágil</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+	<div class="aurora aurora-one" aria-hidden="true"></div>
+	<div class="aurora aurora-two" aria-hidden="true"></div>
+
+	<header class="topbar">
+		<a class="brand" href="#inicio" data-slide="0" aria-label="Ir al inicio">
+			<span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+			<span><strong>UNIVERSIDAD</strong><small>Popular Del Cesar</small></span>
+		</a>
+		<div class="topbar-meta">
+			<span class="chapter-label">INGENIERÍA DE SOFTWARE I</span>
+			<span class="slide-count"><b id="current-slide">01</b> / <span id="total-slides">05</span></span>
+		</div>
+	</header>
+
+	<main class="presentation" aria-live="polite">
+		<section class="slide is-active" id="inicio" data-slide-index="0">
+			<div class="slide-inner hero-layout">
+				<div class="hero-copy reveal">
+					<p class="eyebrow"><span class="eyebrow-dot"></span> Una forma ágil de construir software</p>
+					<h1>Proceso<br><em>Unificado</em> Ágil</h1>
+					<p class="hero-description">Una guía práctica para entregar valor de manera iterativa, con foco en las personas, el producto y la mejora continua.</p>
+					<button class="primary-button next-button" data-next type="button">Explorar AUP <span>→</span></button>
+				</div>
+				<div class="hero-card glass reveal reveal-delay" aria-label="Datos de la presentación">
+					<div class="card-orbit orbit-one"></div><div class="card-orbit orbit-two"></div>
+					<div class="hero-card-top"><span class="mini-label">PRESENTACIÓN</span><span class="spark">✦</span></div>
+					<div class="hero-symbol"><span>A</span><span>U</span><span>P</span></div>
+					<p>Agilidad con estructura.<br><strong>Iterar para aprender.</strong></p>
+					<div class="student-list">
+						<span>Por</span>
+						<div><strong>Yeferson Enrique Pazo Paternina</strong><strong>Victor David Ospino Iglesia</strong></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide" id="filosofia" data-slide-index="1">
+			<div class="slide-inner philosophy-layout">
+				<div class="section-heading reveal"><p class="eyebrow"><span class="eyebrow-dot"></span> La idea central</p><h2>Una ruta clara,<br><em>aprendizaje constante.</em></h2></div>
+				<div class="philosophy-content">
+					<div class="quote-panel glass reveal"><span class="quote-mark">“</span><p>AUP combina la disciplina de un proceso definido con la flexibilidad de los métodos ágiles.</p><span class="quote-line"></span><small>Filosofía AUP</small></div>
+					<div class="principles reveal reveal-delay">
+						<article><span class="number">01</span><h3>En serie</h3><p>El proyecto avanza por cuatro fases ordenadas, con objetivos y decisiones claras.</p></article>
+						<article><span class="number">02</span><h3>Iterado</h3><p>Cada fase se divide en iteraciones cortas que producen incrementos funcionales.</p></article>
+						<article><span class="number">03</span><h3>Orientado al valor</h3><p>La retroalimentación temprana reduce riesgos y acerca el producto a su propósito.</p></article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide" id="fases" data-slide-index="2">
+			<div class="slide-inner">
+				<div class="section-heading split-heading reveal"><div><p class="eyebrow"><span class="eyebrow-dot"></span> El ciclo de vida</p><h2>Cuatro fases,<br><em>un mismo propósito.</em></h2></div><p class="heading-note">Cada fase marca un momento de madurez. Las iteraciones permiten validar, ajustar y seguir avanzando.</p></div>
+				<div class="phase-grid reveal reveal-delay">
+					<article class="phase-card"><span class="phase-index">01</span><div class="phase-icon">◌</div><h3>Inicio</h3><p>Definir la visión, el alcance y la viabilidad del proyecto.</p><span class="phase-tag">Visión</span></article>
+					<article class="phase-card featured"><span class="phase-index">02</span><div class="phase-icon">⌁</div><h3>Elaboración</h3><p>Validar la arquitectura y reducir los riesgos principales.</p><span class="phase-tag">Arquitectura</span></article>
+					<article class="phase-card"><span class="phase-index">03</span><div class="phase-icon">◈</div><h3>Construcción</h3><p>Desarrollar el producto en incrementos funcionales.</p><span class="phase-tag">Producto</span></article>
+					<article class="phase-card"><span class="phase-index">04</span><div class="phase-icon">↗</div><h3>Transición</h3><p>Entregar, capacitar y llevar la solución a sus usuarios.</p><span class="phase-tag">Adopción</span></article>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide" id="flujos" data-slide-index="3">
+			<div class="slide-inner workflows-layout">
+				<div class="section-heading reveal"><p class="eyebrow"><span class="eyebrow-dot"></span> El trabajo que sostiene el proceso</p><h2>Siete flujos para<br><em>hacerlo realidad.</em></h2><p class="heading-note">No son pasos rígidos: son áreas de trabajo que se activan según las necesidades de cada iteración.</p></div>
+				<div class="workflow-grid reveal reveal-delay">
+					<article class="workflow-item"><b>01</b><span>⌘</span><div><h3>Modelado</h3><p>Entender el problema y diseñar la solución.</p></div></article>
+					<article class="workflow-item"><b>02</b><span>▣</span><div><h3>Implementación</h3><p>Convertir las ideas en código funcional.</p></div></article>
+					<article class="workflow-item"><b>03</b><span>✓</span><div><h3>Pruebas</h3><p>Verificar calidad, comportamiento y valor.</p></div></article>
+					<article class="workflow-item"><b>04</b><span>↗</span><div><h3>Despliegue</h3><p>Llevar el producto al entorno real.</p></div></article>
+					<article class="workflow-item"><b>05</b><span>⌘</span><div><h3>Gestión de configuración</h3><p>Controlar versiones y cambios del sistema.</p></div></article>
+					<article class="workflow-item"><b>06</b><span>◎</span><div><h3>Gestión de proyectos</h3><p>Coordinar alcance, tiempo, equipo y riesgos.</p></div></article>
+					<article class="workflow-item"><b>07</b><span>✦</span><div><h3>Entorno</h3><p>Proveer herramientas y condiciones de trabajo.</p></div></article>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide" id="cierre" data-slide-index="4">
+			<div class="slide-inner closing-layout">
+				<div class="closing-copy reveal"><p class="eyebrow"><span class="eyebrow-dot"></span> Para llevar contigo</p><h2>Planear.<br><em>Construir. Aprender.</em></h2><p>El AUP encuentra el equilibrio entre una dirección clara y la capacidad de adaptarse. Cada iteración es una oportunidad para entregar algo mejor.</p><button class="primary-button restart-button" data-slide="0" type="button">Volver al inicio <span>↗</span></button></div>
+				<div class="closing-mark glass reveal reveal-delay"><div class="big-letters"><span>A</span><span>U</span><span>P</span></div><span class="closing-caption">Universidad Popular Del Cesar</span></div>
+			</div>
+		</section>
+	</main>
+
+	<nav class="presentation-nav" aria-label="Navegación de presentación">
+		<button class="nav-arrow" id="previous" type="button" aria-label="Diapositiva anterior">←</button>
+		<div class="progress-track"><span id="progress-bar"></span></div>
+		<button class="nav-arrow" id="next" type="button" aria-label="Siguiente diapositiva">→</button>
+		<div class="nav-dots" aria-label="Seleccionar diapositiva"><button class="dot active" data-slide="0" aria-label="Inicio"></button><button class="dot" data-slide="1" aria-label="Filosofía"></button><button class="dot" data-slide="2" aria-label="Fases"></button><button class="dot" data-slide="3" aria-label="Flujos"></button><button class="dot" data-slide="4" aria-label="Cierre"></button></div>
+	</nav>
+
+	<svg class="waves" viewBox="0 0 1440 190" preserveAspectRatio="none" aria-hidden="true"><path id="wave-back" d="M0,90 C250,190 460,10 720,90 C980,170 1170,40 1440,100 L1440,190 L0,190 Z"></path><path id="wave-front" d="M0,125 C260,35 480,190 750,110 C1000,35 1180,150 1440,70 L1440,190 L0,190 Z"></path></svg>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="JS/index.js"></script>
+</body>
+</html>
