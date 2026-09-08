@@ -574,6 +574,69 @@ h2 em {
   border-color: rgba(41, 152, 87, 0.4);
   background: rgba(223, 246, 230, 0.72);
 }
+.application-layout {
+  display: grid;
+  align-content: center;
+}
+.application-content {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 5vw;
+}
+.application-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(42, 111, 72, 0.14);
+}
+.application-image img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.application-image span {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  padding: 8px 11px;
+  border-radius: 20px;
+  color: white;
+  background: rgba(14, 99, 70, 0.8);
+  font-size: 11px;
+  font-weight: 700;
+}
+.application-list {
+  display: grid;
+  gap: 12px;
+}
+.application-list article {
+  display: flex;
+  gap: 17px;
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.42);
+}
+.application-list article:first-child {
+  border-color: rgba(41, 152, 87, 0.4);
+  background: rgba(223, 246, 230, 0.72);
+}
+.application-list b {
+  color: var(--green);
+  font: 700 13px 'Outfit', sans-serif;
+}
+.application-list h3 {
+  margin: 0 0 4px;
+  font: 600 18px 'Outfit', sans-serif;
+}
+.application-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -801,7 +864,8 @@ h2 em {
   .philosophy-content,
   .workflows-layout,
   .principles-layout-content,
-  .comparison-content {
+  .comparison-content,
+  .application-content {
     grid-template-columns: 1fr;
     gap: 32px;
   }
